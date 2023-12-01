@@ -1,0 +1,26 @@
+// .header{
+//     background-color: #125812;
+//     color:aqua;
+
+//     position: fixed;
+//     top:0;
+//     left:0;
+//     width: 100%;
+//     z-index:10;
+//     padding-top:36px;
+//     @media screen and (min-width: 1280px) {
+//     padding-top:24px;
+//   }
+// }
+// .header-container{
+//     min-height: 70px;  
+// }
+.header{
+    @apply fixed top-0 left-0 w-full z-10 pt-9 desktop:pt-6
+}
+.block{
+    @apply w-full flex justify-between items-center
+   }
+.block__right{
+    @apply flex flex-row items-center gap-3
+}

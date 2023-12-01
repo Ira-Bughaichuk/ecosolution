@@ -1,0 +1,15 @@
+.blockTop{
+    @apply pt-[146px] tablet:pt-[164px] desktop:pt-[200px] flex flex-col gap-y-6 tablet:flex-row tablet:justify-between
+    relative after:absolute after:block after:content-[''] after:-bottom-[24px] after:h-[1px] after:w-full after:bg-secondary
+}
+.block__description{
+    @apply flex flex-col tablet:justify-start gap-y-6 tablet:gap-y-[43px] desktop:gap-y-5
+            tablet:w-[342px] desktop:w-[460px]
+}
+.blocl__text{
+    @apply w-full desktop:w-[363px]
+}
+.blockAddres{
+ @apply mt-[49px] tablet:mt-[43px] desktop:mt-[41px] flex flex-col tablet:flex-row gap-x-2 tablet:justify-between items-center
+        mb-[36px] tablet:mb-[40px] desktop:mb-[36px]
+}

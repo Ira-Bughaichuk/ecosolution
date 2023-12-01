@@ -1,0 +1,25 @@
+.sectionSidebar{
+    @apply  fixed top-0 right-0 z-50 w-full h-full  bg-bgBackdropNav backdrop-blur-[2px]
+    pt-[36px] px-[20px] tablet:pt-[42px] tablet:pl-[30px] desktop:pt-[30px] desktop:pl-[100px]  
+              duration-500 ease-in -translate-x-[130%]  
+              hidden 
+}
+.sectionSidebar.active {
+    @apply translate-x-0 block  
+}
+.sidebarContainer{
+    @apply h-[701px] w-[320px] px-[24px] py-[24px]  rounded-[25px] overflow-x-auto
+     bg-bgNav backdrop-blur-[12,5px]  
+     relative after:block after:content-[''] after:w-[272px] after:h-[1px] after:bg-white after:absolute after:top-[56px] desktop:after:top-[48px]     
+     group-hover:bg-secondary
+     mx-auto tablet:mr-0
+     flex flex-col justify-between 
+}
+.navigation{
+    @apply  flex flex-col gap-y-2 
+}
+
+.navigation__link{
+    @apply  text-lightGray font-normal text-2xl -tracking-[0.96px] cursor-pointer
+    hover:text-white ease-in duration-500
+}

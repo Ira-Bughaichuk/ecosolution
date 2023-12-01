@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-oswald {
+    font-family: var(--oswald-font);
+  }
+}
+@layer utilities {
+  .font-firasans {
+    font-family: var(--firasans-font);
+  }
+}
+@layer utilities {
+  .font-inter {
+    font-family: var(--inter-font);
+  }
+}
+
+*{
+  --text: #173D33;
+  --bgColor: #F3F5FA;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+button{
+  border: none;
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  color: var(--text);
+  background-color: var(--bgColor);
+  font-family: var(--firasans-font);
+}
+.wrapper-part{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.main-part{ 
+  flex: 1 1 auto;
+  padding-top:76px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 64px;
+  }
+}
+.footer-part{
+  background-color: #173D33;
+  color:aqua;
+  padding: 30px 0;
+}
+.container-main {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+.hoverSvg {
+  transition: filter 0.5s ease-in;
+}
+
+.hoverSvg:hover {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
+}
+
+.base-text{
+  @apply text-base font-normal -tracking-[0.64px] 
+}
+.mane-title{
+  @apply w-full tablet:w-[301px] desktop:w-[485px] text-primary text-4xl leading-9 font-normal uppercase tablet:text-5xl tablet:leading-[48px] desktop:text-[64px] desktop:leading-[64px]
+}
+.title{
+  font-family: var(--oswald-font);
+}
+
+
