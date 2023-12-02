@@ -6,10 +6,10 @@
     @apply flex flex-col tablet:justify-start gap-y-6 tablet:gap-y-[43px] desktop:gap-y-5
             tablet:w-[342px] desktop:w-[460px]
 }
-.blocl__text{
+.block__text{
     @apply w-full desktop:w-[363px]
 }
-.blockAddres{
+.blockAddress{
  @apply mt-[49px] tablet:mt-[43px] desktop:mt-[41px] flex flex-col tablet:flex-row gap-x-2 tablet:justify-between items-center
         mb-[36px] tablet:mb-[40px] desktop:mb-[36px]
 }

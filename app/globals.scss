@@ -20,6 +20,7 @@
 
 *{
   --text: #173D33;
+  --secondaryText: #97D28B;
   --bgColor: #F3F5FA;
   margin: 0;
   padding: 0;
@@ -33,6 +34,49 @@ button{
 a{
   text-decoration: none;
 }
+summary {
+  list-style-type: none; 
+  cursor: pointer; 
+  /* padding-left: 24px; Додаємо відступ для місця, де зазвичай з'являється marker */
+  /* @media screen and (min-width: 768px) {
+    padding-left: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 52px;
+  } */
+}
+summary::before {
+  content: '\002B'; 
+  display: inline-flex;
+  position: absolute;
+  top:0;
+  left: 0px;
+  color: var(--secondaryText); 
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 8px; */
+  
+  
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+    /* margin-right: 16px; */
+  }
+
+  @media screen and (min-width: 1280px) {
+    /* margin-right: 24px; */
+  }
+}
+details[open] summary::before {
+  content: '\2212'; 
+  color:var(--text);
+
+}
+
 html,
 body {
   height: 100%;
@@ -46,8 +90,6 @@ body {
   flex-direction: column;
 
 }
-
-
 .main-part{ 
   flex: 1 1 auto;
   padding-top:76px;
@@ -77,6 +119,9 @@ body {
     padding: 0 100px;
   }
 }
+.section-main{
+  @apply pt-9 tablet:pt-[100px] desktop:pt-[120px]
+}
 .hoverSvg {
   transition: filter 0.5s ease-in;
 }
@@ -85,14 +130,21 @@ body {
   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
 }
 
-.base-text{
-  @apply text-base font-normal -tracking-[0.64px] 
-}
+
 .mane-title{
   @apply w-full tablet:w-[301px] desktop:w-[485px] text-primary text-4xl leading-9 font-normal uppercase tablet:text-5xl tablet:leading-[48px] desktop:text-[64px] desktop:leading-[64px]
 }
 .title{
-  font-family: var(--oswald-font);
+  @apply text-primary font-normal text-[28px] leading-7 uppercase  tablet:text-4xl tablet:leading-9 desktop:text-5xl desktop:leading-[48px]
 }
+.base-text{
+  @apply text-primary text-base font-normal -tracking-[0.64px] 
+}
+.subBase-text{
+  @apply  text-primary text-lg font-normal -tracking-[0.72px] desktop:text-2xl  desktop:-tracking-[0.96]
+}
+/* .title{
+  font-family: var(--oswald-font);
+} */
 
 

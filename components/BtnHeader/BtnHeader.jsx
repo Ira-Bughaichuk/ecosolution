@@ -1,12 +1,12 @@
 import Image from "next/image";
 import ArrowRight from "../../public/assets/icons/arrow-right.svg";
 
-export default function BtnHeader() {
+export default function BtnHeader({title}) {
   return (
     <button
       type="button"
-      className="hidden cursor-pointer tablet:flex font-oswald text-base font-normal  rounded-full bg-secondary items-center py-[10px] px-4 hover:text-secondary hover:bg-primary transition ease-in duration-500 group"
-    > Get in touch
+      className="flex cursor-pointer  font-oswald text-base font-normal  rounded-full bg-secondary items-center py-[10px] px-4 hover:text-secondary hover:bg-primary transition ease-in duration-500 group"
+    > {title}
       <Image
         src={ArrowRight}
         alt="Arrow icon"

@@ -1,0 +1,17 @@
+.blocks{
+    @apply flex flex-col items-center justify-center gap-y-[96px] tablet:gap-y-[135px]  desktop:gap-y-[120px]
+}
+.block__title{
+    @apply block w-full tablet:w-[368px] desktop:w-[491px] text-center
+}
+.block__description{
+    @apply flex flex-row items-center gap-x-2 tablet:gap-x-6
+    relative after:absolute after:block after:content-[''] after:rotate-90 after:-top-[48px] tablet:after:-top-[60px] desktop:after:-top-[51px] after:h-[1px] after:w-[48px] tablet:after:w-[87px] after:bg-secondary
+    after:inset-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+}
+.block__coordinates{ 
+    @apply text-secondary text-5xl leading-[48px] font-bold uppercase tablet:text-[100px] tablet:leading-[100px] desktop:text-[164px] desktop:leading-[164px]
+}
+.block__width{
+    @apply text-primary text-2xl leading-6 font-normal tablet:text-[28px] tablet:leading-[48px] desktop:text-5xl
+}

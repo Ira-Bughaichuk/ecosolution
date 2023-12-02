@@ -6,9 +6,9 @@ import Cases from "@/sections/Cases/Cases";
 import ContactUs from "@/sections/ContactUs/ContactUs";
 import FAQ from "@/sections/FAQ/FAQ";
 import Header from "@/sections/Header/Header";
-import Main from "@/sections/Main/Main";
 import Nav from "@/components/Nav/Nav";
-import Hero from "@/sections/Hero/Hero";
+import Main from "@/sections/Main/Main";
+import Electricity from "@/sections/Electricity/Electricity";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -25,9 +25,9 @@ export default function Home() {
       <div className="wrapper-part">
         <Header handleOpen={handleOpen}/>
         <main className="main-part">
-          <Hero />
           <Main />
           <About />
+          <Electricity />
           <Cases />
           <FAQ />
           <ContactUs />
