@@ -50,25 +50,30 @@ summary::before {
   content: '\002B'; 
   display: inline-flex;
   position: absolute;
-  top:0;
-  left: 0px;
+   /* top: 50%;
+   transform: translate(0, -50%); */
+   top:32px;
+  /* left: -24px; */
+  left:0;
   color: var(--secondaryText); 
   width: 16px;
   height: 16px;
   align-items: center;
   justify-content: center;
-  /* margin-right: 8px; */
   
   
 
   @media screen and (min-width: 768px) {
     width: 28px;
     height: 28px;
-    /* margin-right: 16px; */
+    /* left: -44px; */
+    top:26px;
   }
 
   @media screen and (min-width: 1280px) {
-    /* margin-right: 24px; */
+    /* left: 0; */
+    top:20px;
+
   }
 }
 details[open] summary::before {
@@ -142,6 +147,9 @@ body {
 }
 .subBase-text{
   @apply  text-primary text-lg font-normal -tracking-[0.72px] desktop:text-2xl  desktop:-tracking-[0.96]
+}
+.contact-text{
+  @apply text-primary text-xl font-normal -tracking-[0.8] desktop:text-2xl desktop:-tracking-[0.96]
 }
 /* .title{
   font-family: var(--oswald-font);

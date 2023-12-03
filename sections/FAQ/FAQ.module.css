@@ -2,27 +2,33 @@
    @apply flex flex-col tablet:flex-row tablet:justify-between
 }
 .block__title{
-    @apply tablet:hidden block w-full tablet:w-[347px] desktop:w-[398px] desktop:text-center desktop:mx-auto
+    @apply tablet:hidden block w-full tablet:w-[347px] desktop:w-[398px] desktop:text-center desktop:mx-auto mb-[41px]
 }
 .block__left{
-    @apply w-full tablet:w-[336px] desktop:w-[550px]
+    @apply w-full tablet:w-[342px] desktop:w-[596px]
 }
 .block__right{
-    @apply w-full tablet:w-[347px] desktop:w-[398px] flex tablet:flex-col tablet:justify-between items-center
+    @apply w-full flex tablet:flex-col tablet:justify-between items-center
+    tablet:w-[347px] desktop:w-[460px] 
 }
 .block__right__title{
-    @apply hidden tablet:block w-full tablet:w-[319px] desktop:w-[398px] desktop:text-center desktop:mx-auto
+    @apply hidden tablet:block w-full tablet:w-[347px] desktop:w-[398px] desktop:text-center desktop:mx-auto 
 }
 .block__right__contact{
-    @apply w-full mx-auto flex flex-col gap-y-3 items-center
+    @apply w-full flex flex-col gap-y-3 text-center tablet:text-left desktop:text-center
+}
+.block__right__btn{
+    @apply flex max-w-[140px] self-center
 }
 .block__left__list{
-    @apply block w-full tablet:w-[298px] desktop:w-[544px]
+    @apply flex flex-col gap-y-[33px] desktop:gap-y-[49px] pt-[17px] tablet:pt-[29px] desktop:pt-[27px]
+    
 }
 .block__left__item{
-    @apply relative  flex w-[296px] tablet:w-[298px] desktop:w-[544px] pl-6 tablet:pl-[44px] desktop:pl-[52px]
-    /* flex flex-row items-center gap-x-2 tablet:gap-x-4 desktop:gap-x-6 */
+    @apply  flex 
+    maxMobile:max-w-[320px] tablet:w-[342px] desktop:w-[596px] pl-6 tablet:pl-[44px] desktop:pl-[48px]
+    relative before:absolute before:block before:content-[''] before:left-0  before:-top-[16px] tablet:before:-top-[24px] before:h-[1px] before:w-full before:bg-secondary
 }
 .block__left__summary{
-    @apply flex mb-4 desktop:mb-6 
+    @apply w-full flex mb-4 desktop:mb-6
 }
