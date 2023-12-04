@@ -1,6 +1,8 @@
 .sectionSidebar{
-    @apply  fixed top-0 right-0 z-50 w-full h-full  bg-bgBackdropNav backdrop-blur-[2px]
-    pt-[36px] px-[20px] tablet:pt-[42px] tablet:pl-[30px] desktop:pt-[30px] desktop:pl-[100px]  
+    @apply  fixed  z-50 w-full h-full  bg-bgBackdropNav backdrop-blur-[2px]
+    /*top-0 right-0  pt-[36px] px-[20px] tablet:pt-[42px] tablet:pl-[30px] desktop:pt-[30px] desktop:pl-[100px]   */
+    top-[36px] px-[20px] tablet:top-[42px] tablet:left-[30px] desktop:top-[30px] desktop:left-[100px]  
+
               duration-500 ease-in -translate-x-[130%]  
               hidden 
 }

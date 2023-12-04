@@ -4,7 +4,7 @@ import s from "./ContactUs.module.css";
 
 export default function ContactUs() {
   return (
-    <div className="section-main">
+    <div id="/contactUs" className="section-main">
       <div className="container-main">
         <div className={s.block__title}>
           <h2 className="title font-oswald">Contact us</h2>

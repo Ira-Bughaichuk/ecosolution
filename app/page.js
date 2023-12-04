@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 import Cases from "@/sections/Cases/Cases";
+import About from "@/sections/About/About";
 import ContactUs from "@/sections/ContactUs/ContactUs";
 import FAQ from "@/sections/FAQ/FAQ";
 import Header from "@/sections/Header/Header";
@@ -26,6 +27,7 @@ export default function Home() {
         <Header handleOpen={handleOpen}/>
         <main className="main-part">
           <Main />
+          <About />
           <Electricity />
           <Cases />
           <FAQ />

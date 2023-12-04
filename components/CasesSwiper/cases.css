@@ -1,0 +1,22 @@
+.swiper {
+    width: 100%;
+  }
+  
+.swiper-slide {
+  width: 320px;
+  height: 318px;
+
+  @media screen and (min-width: 768px) {
+    width: 342px;
+    height: 322px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 512px;
+    height: 506px;
+  }
+}
+  
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

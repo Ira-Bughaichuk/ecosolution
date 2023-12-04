@@ -14,12 +14,13 @@
     @apply block w-full outline-none border-b border-secondary invalid:border-errorColor 
     text-primary text-lg font-normal -tracking-[0.72px] pb-2 
     placeholder:text-placholderContact placeholder:text-lg placeholder:font-normal placeholder:-tracking-[0.72px]
+    bg-transparent
 }
 .textarea{
     @apply block w-full outline-none
     text-primary text-lg font-normal -tracking-[0.72px] pb-2 
     placeholder:text-placholderContact placeholder:text-lg placeholder:font-normal placeholder:-tracking-[0.72px]
-
+    bg-transparent
     mb-4 h-[147px] desktop:h-[149px] desktop:mb-8
     border-b border-secondary invalid:border-errorColor
 }

@@ -5,7 +5,7 @@ import hero from '../../public/assets/images/hero.jpg';
 
 export default function Main() {
   return (
-    <div className={s.section__main}>
+    <div id="/main" className={s.section__main}>
         <div className="container-main"> 
             <div className={s.blockTop}>
                 <h1 className="font-oswald mane-title">RENEWABLE ENERGY For any task</h1>
@@ -28,9 +28,10 @@ export default function Main() {
                 alt="Hero"  
                 width={1240}
                 height={524}
-                sizes="100vw"
                 loading="lazy"
-                className="w-[319px] h-[200px] tablet:w-[708px] tablet:h-[348px] desktop:w-[1240px] desktop:h-[524px] object-cover" 
+                sizes="(max-width: 767px) 708px, (max-width: 1279px) 1240px"
+                // sizes="100vw"
+                // className="w-[319px] h-[200px] tablet:w-[708px] tablet:h-[348px] desktop:w-[1240px] desktop:h-[524px] object-cover" 
                 />
         </div>
     </div>

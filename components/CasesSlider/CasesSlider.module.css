@@ -1,0 +1,29 @@
+.cart{
+    @apply flex flex-col w-[320px] tablet:w-[342px] desktop:w-[596px]
+}
+.block{
+    @apply flex flex-col  pt-[24px] pb-[12px] px-[12px]  desktop:py-[36px] bg-bgContacts desktop:px-[48px]
+}
+
+.row__top{
+    @apply flex flex-row justify-between mb-[34px] tablet:mb-[29px] desktop:mb-[61px] 
+}
+.row__top__title{
+    @apply text-primary text-lg font-normal -tracking-[0.72px] tablet:text-xl  tablet:-tracking-[0.8px] desktop:text-2xl desktop:-tracking-[0.96px]
+            w-[175px] tablet:w-[194px] desktop:w-[357px]
+}
+.btn{
+    @apply flex justify-center items-center  w-[60px] h-[60px]  cursor-pointer bg-secondary hover:bg-primary transition ease-in duration-500 
+    rounded-full  border-none
+}
+
+
+.row__bottom{
+    @apply flex flex-row justify-between
+     text-primary text-xs font-normal -tracking-[0.48px] tablet:text-sm  tablet:-tracking-[0.56px] desktop:text-base desktop:-tracking-[0.64px]
+     relative  before:absolute before:content-[''] before:bg-secondary before:-top-[12px] desktop:before:-top-[24px] before:left-0 before:w-full before:h-[1px] 
+
+}
+.row__bottom__date{
+    @apply text-primary
+}

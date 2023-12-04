@@ -1,69 +1,15 @@
 .blocks{
-    @apply flex flex-col gap-y-9 tablet:gap-y-[100px] desktop:gap-y-[122px]
+    @apply flex flex-col gap-y-[26px] tablet:gap-y-[39px] desktop:gap-y-[122px]
 }
 .block__top{
     @apply flex flex-col gap-y-6 tablet:flex-row tablet:justify-between
     tablet:relative tablet:before:absolute tablet:before:h-full tablet:before:w-[1px] tablet:before:bg-secondary
     tablet:before:top-1/2 tablet:before:left-1/2 tablet:before:transform tablet:before:-translate-x-1/2 tablet:before:-translate-y-1/2
 }
+
 .block__title{
-    @apply tablet:w-[272px] desktop:w-[365px]
+    @apply block w-[264px] desktop:w-[398px]
 }
-.block__text{
-    @apply tablet:w-[342px] desktop:w-[459px] text-justify
+.block__btns{
+    @apply tablet:w-[342px] desktop:w-[459px]
 }
-
-.block__cart{
-    @apply w-[148px] h-[197px] tablet:w-[159px] tablet:h-[197px] desktop:w-[274px] desktop:h-[339px]
-}
-
-.parent {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-justify-self: center; 
-grid-column-gap: 8px;
-grid-row-gap: 8px;
-
-@media screen and (min-width: 480px) {
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-@media screen and (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media screen and (min-width: 1280px) {
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-.div1 {grid-area: 1 / 1 / 2 / 2;}
-.div2 { grid-area: 1 / 2 / 2 / 3;}
-.div3 { 
-    display: none;
- @media screen and (min-width: 768px) {
-    display: grid;
-    grid-area: 1 / 3 / 2 / 5;
-      }
-     }
-.div4 { 
-    display: none;
- @media screen and (min-width: 768px) {
-    display: grid;
-    grid-area: 2 / 1 / 3 / 3;
-      }
-     }
-.div5 { 
-    grid-area: 2 / 1 / 3 / 2;
- @media screen and (min-width: 768px) {
-    grid-area: 2 / 3 / 3 / 4;
-      }
-     }
-.div6 { 
-    grid-area: 2 / 2 / 3 / 3;
- @media screen and (min-width: 768px) {
-    grid-area: 2 / 4 / 3 / 5;
-      }
-     }

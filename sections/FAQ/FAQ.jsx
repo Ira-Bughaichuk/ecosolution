@@ -4,7 +4,7 @@ import s from "./FAQ.module.css";
 
 export default function FAQ() {
   return (
-    <div className="section-main">
+    <div id="/faq" className="section-main">
       <div className="container-main">
         <div className={s.blocks}>
           <div className={s.block__title}>
