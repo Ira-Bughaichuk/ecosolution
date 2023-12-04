@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-      'minMobile': '360px',
+      'minMobile': '320px',
        'mobile':'480px',
       'tablet': '768px',
       'maxMobile': {'max': '767px'},
@@ -25,6 +25,7 @@ module.exports = {
         bgNav: ' rgba(23, 61, 51, 0.75)',
         bgBtnMenu: '#DCEFD8',
         bgContacts:'#EAEDF1',
+        placholderContact:'BDBDBD',
         errorColor: '#D28B8B',
       },
       backgroundImage: {

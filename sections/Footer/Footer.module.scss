@@ -1,0 +1,40 @@
+.footer__part{
+    @apply py-6 tablet:py-[40px]
+  }
+.block__mobile{
+    @apply flex flex-col gap-y-[24px] desktop:gap-y-[16px] tablet:hidden justify-center
+    relative before:absolute before:block before:content-[''] before:-top-[24px] tablet:-top-[40px] before:h-[1px] before:w-full before:bg-secondary
+}
+.row__top{
+    @apply flex flex-col gap-y-[24px] items-center
+}
+.row__bottom{
+    @apply flex flex-col  gap-y-[16px] items-center
+}
+.row__logo{
+    @apply w-full flex justify-between items-center
+}
+.blockAddress{
+    @apply flex flex-col tablet:flex-row gap-x-2 tablet:justify-between items-center
+           
+}
+.block__mobile{
+    @apply tablet:hidden flex flex-col 
+}
+.block__tablet{
+    @apply hidden tablet:flex flex-col tablet:flex-row tablet:justify-between items-center
+            relative before:absolute before:block before:content-[''] before:-top-[24px] tablet:-top-[40px] before:h-[1px] before:w-full before:bg-secondary
+}
+.block__info__logo{
+    @apply flex flex-col tablet:gap-y-4
+}
+.block__info__social{
+    @apply flex flex-col tablet:gap-y-7
+}
+.block__info__btn{
+    @apply flex flex-col tablet:justify-end tablet:gap-y-6
+}
+.footer__btn{
+    @apply flex self-end w-[32px] h-[32px]  bg-secondary cursor-pointer bg-transparent hover:bg-primary transition ease-in duration-500 
+    rounded-full  border-none
+}

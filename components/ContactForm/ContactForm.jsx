@@ -1,47 +1,57 @@
+'use client';
 import s from './ContactForm.module.css';
 import { useForm } from 'react-hook-form';
+import { contactForm } from '@/utils/Data/contactForm';
+import useFormPersist from 'react-hook-form-persist';
+import toast from "react-hot-toast";
+import FormInput from '../FormInput/FormInput';
+import FormTextArea from '../FormTextArea/FormTextArea';
+import BtnGeneral from '../BtnGeneral/BtnGeneral';
 
 export default function ContactForm() {
+   const {inputs, textarea} = contactForm;
+
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+    watch, 
+    setValue,
+    reset,
+  } = useForm({ mode: "onBlur" });
+  useFormPersist('contactsForm', {watch, setValue});
+
   const onSubmit = (data) => {
-    alert(`
+    toast.success(`
         Full Name:${data.fullName},
         Email:${data.email},
+        Email:${data.phone},
         Message:${data.message || ""}`);
     reset();
   };
   return (
-    <form action=""  onSubmit={handleSubmit(onSubmit)}>
-       <div className="flex flex-col tablet:w-[221px] desktop:w-full relative">
-            <label className="label" htmlFor="contact-name">
-               Full name:
-            </label>
-            <input
-              id="contact-name"
-              autoComplete="name"
-              aria-label="Name"
-              className="input"
-              placeholder="John Rosie"
-              {...register("fullName", {
-                required: "Incorrect name",
-                pattern: {
-                  value: /^[A-Za-z]+$/i,
-                  message: "Enter only words",
-                },
-              })}
-            />
-            <div className="flex justify-end absolute bottom-[-22px] right-0">
-              {errors?.fullName && (
-                  <p className="text-errorColor text-xs leading-6 tracking-[2.4px] ml-1">
-                    {errors?.fullName?.message}
-                  </p>
-              )}
-            </div>
-          </div>
+    <form action="#"  onSubmit={handleSubmit(onSubmit)} className={s.form__container}>
+          {inputs.map(inputInfo => 
+                        <div className={s.input__list} key={inputInfo.id}>
+                            <FormInput 
+                                inputInfo={inputInfo}
+                                register={register}
+                                errors={errors}
+                                inputStyles={s.input} 
+                                inputListStyles={s.input__item}
+                                errorStyle={s.error__message}
+                            />
+                        </div>          
+            )}
+            <div>
+                 <FormTextArea textarea={textarea} register={register}
+                    inputListStyles={s.input__item}
+                    textAreaStyles={s.textarea}
+                  />
+                  <div className={s.form__btn}>
+                    <BtnGeneral title={'Send'}/>
+                  </div>
+             </div>
     </form>
   )
 }

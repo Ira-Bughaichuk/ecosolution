@@ -1,5 +1,9 @@
+.section__main{
+   @apply pb-9 tablet:pb-[100px] desktop:pb-[120px]
+   pt-[146px] tablet:pt-[164px] desktop:pt-[200px]
+}
 .blockTop{
-    @apply pt-[146px] tablet:pt-[164px] desktop:pt-[200px] flex flex-col gap-y-6 tablet:flex-row tablet:justify-between
+    @apply  flex flex-col gap-y-6 tablet:flex-row tablet:justify-between
     relative after:absolute after:block after:content-[''] after:-bottom-[24px] after:h-[1px] after:w-full after:bg-secondary
 }
 .block__description{

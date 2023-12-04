@@ -1,0 +1,32 @@
+
+.form__container{
+    @apply bg-bgContacts px-4 py-9 tablet:px-6 desktop:px-[48px] desktop:py-[48px] 
+    flex flex-col gap-y-7
+    w-full tablet:w-[342px] desktop:w-[596px]
+}
+.input__list{
+    @apply w-full flex flex-col gap-y-7
+}
+.input__item{
+    @apply relative w-full flex flex-col gap-y-2  desktop:gap-y-3
+}
+.input{
+    @apply block w-full outline-none border-b border-secondary invalid:border-errorColor 
+    text-primary text-lg font-normal -tracking-[0.72px] pb-2 
+    placeholder:text-placholderContact placeholder:text-lg placeholder:font-normal placeholder:-tracking-[0.72px]
+}
+.textarea{
+    @apply block w-full outline-none
+    text-primary text-lg font-normal -tracking-[0.72px] pb-2 
+    placeholder:text-placholderContact placeholder:text-lg placeholder:font-normal placeholder:-tracking-[0.72px]
+
+    mb-4 h-[147px] desktop:h-[149px] desktop:mb-8
+    border-b border-secondary invalid:border-errorColor
+}
+.error__message{
+   @apply text-errorColor absolute -bottom-[30px] desktop:-bottom-[36px] right-0 
+}
+
+.form__btn{
+    @apply flex justify-end
+}

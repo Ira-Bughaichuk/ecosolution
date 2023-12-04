@@ -11,8 +11,8 @@ export default function ContactUs() {
         </div>
 
         <div className={s.blocks}>
-          <ContactForm />
           <ContactsInfo />
+          <ContactForm />
         </div>
       </div>
     </div>

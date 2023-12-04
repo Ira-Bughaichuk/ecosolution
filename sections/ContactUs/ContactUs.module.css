@@ -3,5 +3,5 @@
     @apply text-center mb-[24px] tablet:mb-[40px] desktop:mb-[120px]
 }
 .blocks{
-    @apply flex-col gap-y-6 tablet:flex-row tablet:justify-between
+    @apply flex flex-col gap-y-9 tablet:flex-row tablet:justify-between
 }

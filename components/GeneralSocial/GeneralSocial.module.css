@@ -1,0 +1,3 @@
+.row__socials{
+    @apply flex flex-row gap-x-[32px] desktop:gap-x-2
+}

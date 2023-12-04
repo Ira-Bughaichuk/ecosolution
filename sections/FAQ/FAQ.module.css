@@ -1,6 +1,7 @@
 .blocks{
    @apply flex flex-col tablet:flex-row tablet:justify-between
 }
+
 .block__title{
     @apply tablet:hidden block w-full tablet:w-[347px] desktop:w-[398px] desktop:text-center desktop:mx-auto mb-[41px]
 }
@@ -30,5 +31,5 @@
     relative before:absolute before:block before:content-[''] before:left-0  before:-top-[16px] tablet:before:-top-[24px] before:h-[1px] before:w-full before:bg-secondary
 }
 .block__left__summary{
-    @apply w-full flex mb-4 desktop:mb-6
+    @apply w-full flex mb-4 desktop:mb-6 text-justify
 }

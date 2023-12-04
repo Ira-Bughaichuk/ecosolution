@@ -3,12 +3,12 @@ import s from './ContactsInfo.module.css';
 import Phone from '../../public/assets/icons/phone.svg';
 import Map from '../../public/assets/icons/map.svg';
 import Email from '../../public/assets/icons/email.svg';
-import Facebook from '../../public/assets/icons/facebook.svg';
-import Instagram from '../../public/assets/icons/instagram.svg'; 
+import GeneralSocial from '../GeneralSocial/GeneralSocial';
+
 
 export default function ContactsInfo() {
   return (
-    <address>
+    <address className={s.address__container}>
         <ul className={s.address__list}>
             <li className={s.address__item}>
                 <span className="font-firasans base-text inline-block mb-2 desktop:mb-4">Phone:</span>
@@ -45,14 +45,15 @@ export default function ContactsInfo() {
             </li>
             <li>
             <span className="font-firasans base-text inline-block mb-5 desktop:mb-4">Social Networks:</span>
-                <div className={s.row__socials}>
+                {/* <div className={s.row__socials}>
                     <a href="https://www.facebook.com/">
                         <Image src={Facebook} alt="Facebook" width={24} height={24} className="hoverSvg"/>
                     </a>
                     <a href="https://www.instagram.com/">
                         <Image src={Instagram} alt="Instagram" width={24} height={24} className="hoverSvg"/>
                     </a>
-                </div>
+                </div> */}
+                <GeneralSocial />
             </li>
         </ul>
     </address>

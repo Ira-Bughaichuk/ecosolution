@@ -1,6 +1,6 @@
 import { firaSans, oswald, inter } from '@/font/font';
 import './globals.scss';
-
+import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,7 +10,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${firaSans.variable} ${oswald.variable} ${inter.variable}`}>{children}</body>
+      <body className={`${firaSans.variable} ${oswald.variable} ${inter.variable}`}>
+      <Toaster
+          position="top-center"
+          reverseOrder={false}
+          toastOptions={{
+            style: {
+              borderRadius: '5px',
+              borderColor:'#173D33',
+              borderWidth:'1px',
+              background: '#F3F5FA',
+              color: '#173D33'
+            },
+            duration: 2500,
+          }}
+        />
+        {children}
+        </body>
     </html>
   )
 }
