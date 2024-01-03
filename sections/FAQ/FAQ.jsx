@@ -1,8 +1,16 @@
+'use client';
+import { useState } from 'react';
 import BtnHeader from "@/components/BtnHeader/BtnHeader";
 import { detailsList } from "@/utils/Data/detailsList";
 import s from "./FAQ.module.css";
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const handleToggle = (index) => {
+    setOpenIndex(index === openIndex ? -1 : index);
+  };
+
   return (
     <div id="/faq" className="section-main">
       <div className="container-main">
@@ -12,8 +20,12 @@ export default function FAQ() {
           </div>
           <div className={s.block__left}>
             <div className={s.block__left__list}>
-              {detailsList.map(item=>(
-                <details className={s.block__left__item} key={item.id}>
+              {detailsList.map((item, index) =>(
+                <details className={`${s.block__left__item} ${openIndex === index ? s.opened : ''}`}
+                 key={item.id} open={openIndex === index} onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle(index);
+                }}>
                   <summary className={s.block__left__summary}><span className="font-firasans subBase-text">{item.summery}</span></summary>
                   <p className="font-firasans text-justify text-sm font-normal -leading-[0.56px] desktop:text-base desktop:-leading-[0.64px]">{item.text}</p>
                 </details>
