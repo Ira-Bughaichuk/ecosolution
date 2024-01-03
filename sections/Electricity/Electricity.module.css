@@ -15,3 +15,4 @@
 .block__width{
     @apply text-primary text-2xl leading-6 font-normal tablet:text-[28px] tablet:leading-[48px] desktop:text-5xl
 }
+
