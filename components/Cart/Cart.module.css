@@ -1,7 +1,7 @@
 .cart{
     @apply flex flex-col gap-y-[46px] tablet:gap-y-[40px] desktop:gap-y-[60px]
      bg-bgContacts px-1 py-[13px] minMobile:px-3 desktop:px-3 desktop:py-[48px] 
-     h-[250px] mobile:h-[197px] tablet:h-[197px]  desktop:h-[300px] tablet:w-[159px] desktop:w-[240px]
+     h-[250px] mobile:h-[197px] tablet:h-[197px] desktop:h-[300px] tablet:w-[159px] desktop:w-[240px]
 
 }
 .cart__title{

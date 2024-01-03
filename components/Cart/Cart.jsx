@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Circle from '../../public/assets/icons/maximize-circle.svg';
 import s from './Cart.module.css';
 
 export default function Cart({img,title, text}) {

@@ -21,13 +21,12 @@ export default function About() {
             <p className={`${s.block__text}  base-text`}>EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world`s energy needs.</p>
         </div>
         <div className={s.parent}>
-          <div className={s.div1 }> <Cart img={Circle} title={"Openness"} text={"to the world, people, new ideas and projects"}/>
-          </div>
-          <div className={s.div2}><Cart img={Global} title={"Responsibility"} text={"we are aware that the results of our work have an impact on our lives and the lives of future generations"}/> </div>
-          <div className={s.div3}><Image src={part1} alt="People" className="hidden tablet:block w-auto tablet:h-[197px] desktop:h-[339px] object-cover"/> </div>
-          <div className={s.div4}><Image src={part2} alt="Solar panels" className="hidden tablet:block  w-auto tablet:h-[197px] desktop:h-[339px] object-cover"/> </div>
-          <div className={s.div5}><Cart img={Charge} title={"Innovation"} text={"we use the latest technology to implement non-standard solutions"}/> </div>
-          <div className={s.div6}><Cart img={Ranking} title={"Quality"} text={"we do not strive to be the first among others, but we want to be the best in our business"}/> </div>
+          <div className={s.part1}><Cart img={Circle} title={"Openness"} text={"to the world, people, new ideas and projects"}/></div>
+          <div className={s.part2}><Cart img={Global} title={"Responsibility"} text={"we are aware that the results of our work have an impact on our lives and the lives of future generations"}/> </div>
+          <div className={s.part3}><Image src={part1} alt="People" width={596} height={339} sizes="(max-width: 1279px) 346px, 534px"/></div>
+          <div className={s.part4}><Image src={part2} alt="Solar panels" width={596} height={339} sizes="(max-width: 1279px) 346px, 534px"/> </div>
+          <div className={s.part5}><Cart img={Charge} title={"Innovation"} text={"we use the latest technology to implement non-standard solutions"}/> </div>
+          <div className={s.part6}><Cart img={Ranking} title={"Quality"} text={"we do not strive to be the first among others, but we want to be the best in our business"}/> </div>
         </div>
       </div>
     </div>
@@ -35,6 +34,8 @@ export default function About() {
   );
 }
 
+
+//image  className="hidden tablet:block w-auto tablet:h-[197px] desktop:h-[339px] object-cover"
 // width={596}
 // height={339}
 // className="hidden tablet:block tablet:w-[342px] tablet:h-[197px] desktop:w-[596px] desktop:h-[339px] object-cover"
