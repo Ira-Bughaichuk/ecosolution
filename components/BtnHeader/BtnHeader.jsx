@@ -1,10 +1,15 @@
 import Image from "next/image";
 import ArrowRight from "../../public/assets/icons/arrow-right.svg";
+import scrollToSection from '../../utils/scrollToSection';
 
 export default function BtnHeader({title}) {
+  const handleButtonClick = () => {
+    scrollToSection('/contactUs');
+  };
   return (
     <button
       type="button"
+      onClick={handleButtonClick}
       className="flex cursor-pointer  font-oswald text-base font-normal  rounded-full bg-secondary items-center py-[10px] px-4 hover:text-secondary hover:bg-primary transition ease-in duration-500 group"
     > {title}
       <Image

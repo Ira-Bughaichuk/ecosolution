@@ -1,9 +1,14 @@
+import Image from "next/image";
 import GeneralSocial from "@/components/GeneralSocial/GeneralSocial";
 import ArrowRight from "../../public/assets/icons/arrow-right.svg";
 import Logo from "@/components/Logo/Logo";
-import Image from "next/image";
+import scrollToSection from '../../utils/scrollToSection';
 import s from "./Footer.module.scss";
+
 export default function Footer() {
+  const handleButtonClick = () => {
+    scrollToSection('/main');
+  };
   return (
     <footer className={s.footer__part}>
       <div className="container-main">
@@ -22,7 +27,7 @@ export default function Footer() {
             </a>
           </div>
           <div className={s.block__info__btn}>
-            <button className={`${s.footer__btn} group`}>
+            <button className={`${s.footer__btn} group`} type='button' onClick={handleButtonClick}>
               <Image
                 src={ArrowRight}
                 alt="arrow"
