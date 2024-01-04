@@ -19,6 +19,7 @@ module.exports = {
         primary: '#173D33',
         secondary: '#97D28B',
         gray:'#828382',
+        middleGray:'rgba(23, 61, 51, 0.25)',
         lightGray:'rgba(255, 255, 255, 0.25)',
         white: "#FFF",
         bgBackdropNav:'#F3F5FA',

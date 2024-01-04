@@ -1,5 +1,6 @@
 .cart{
-    @apply flex flex-col w-[320px] tablet:w-[342px] desktop:w-[596px]
+    @apply flex flex-col w-full 
+     
 }
 .block{
     @apply flex flex-col  pt-[24px] pb-[12px] px-[12px]  desktop:py-[36px] bg-bgContacts desktop:px-[48px]

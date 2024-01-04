@@ -11,5 +11,11 @@
     @apply block w-[264px] desktop:w-[398px]
 }
 .block__btns{
-    @apply tablet:w-[342px] desktop:w-[459px]
+    @apply tablet:w-[342px] desktop:w-[459px] flex justify-between items-end flex-row-reverse
+}
+.block__counter{
+    @apply text-[28px] font-light not-italic -tracking-[1.12px] text-primary
+}
+.block__counterLight{
+    @apply  text-middleGray
 }

@@ -1,14 +1,35 @@
-import Image from 'next/image'
-import NavRight from '../../public/assets/icons/slide-nav-right.svg';
-import NavLeft from '../../public/assets/icons/slide-nav-right.svg';
-import s from './CasesSwiperNav.css';
+import Image from "next/image";
+import NavRight from "../../public/assets/icons/slide-nav-right.svg";
+import NavLeft from "../../public/assets/icons/slide-nav-right.svg";
+import "./CasesSwiperNav.css";
 
-// `${s.block}  ${swiperReady ? 'opacity-100' : 'opacity-0'}`
-export default function CasesSwiperNav({swiperReady, prevBtnRef, nextBtnRef }) {
+export default function CasesSwiperNav() {
   return (
-    <div className={s.blocks__btns}>
-        <button type="button" ref={prevBtnRef} className={s.btn__sliderNav}><Image src={NavRight} alt="arrow right" width={36} height={36} className="rotate-180"/></button>
-        <button type="button" ref={nextBtnRef} className={s.btn__sliderNav}><Image src={NavLeft} alt="arrow left" width={36} height={36}  className="rounded-full hoverSvg"/></button>
+    <div className="flex ml-auto h-[66px] relative mr-0 w-[150px] desktop:h-[88px] desktop:w-[192px]">
+      <button
+        type="button"
+        className="swiper-button swiper-button-prev"
+        aria-label="button-back"
+      >
+        <Image
+          src={NavRight}
+          alt="arrow right"
+          width={36}
+          height={36}
+        />
+      </button>
+      <button
+        type="button"
+        className="swiper-button swiper-button-next"
+        aria-label="button-next"
+      >
+        <Image
+          src={NavLeft}
+          alt="arrow left"
+          width={36}
+          height={36}
+        />
+      </button>
     </div>
-  )
+  );
 }
