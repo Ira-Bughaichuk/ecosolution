@@ -20,7 +20,7 @@ export default function FormInput({ inputInfo, inputStyles, inputListStyles, err
         autoComplete={inputInfo.autoComplete}
         placeholder={inputInfo.placeholder}
         aria-label={inputInfo.aria}
-        className={`${inputStyles} font-firasans`}
+        className={`${inputStyles} font-firasans  ${errors[inputInfo.formData]  ? 'border-errorColor'  : 'border-secondary'}`}
         {...register(inputInfo.formData, options)}
       />
       {inputInfo.required && errors[inputInfo.formData] && (

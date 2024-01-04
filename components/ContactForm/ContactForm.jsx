@@ -1,12 +1,13 @@
 'use client';
-import s from './ContactForm.module.css';
 import { useForm } from 'react-hook-form';
-import { contactForm } from '@/utils/Data/contactForm';
 import useFormPersist from 'react-hook-form-persist';
 import toast from "react-hot-toast";
+import { contactForm } from '@/utils/Data/contactForm';
 import FormInput from '../FormInput/FormInput';
 import FormTextArea from '../FormTextArea/FormTextArea';
-import BtnGeneral from '../BtnGeneral/BtnGeneral';
+import BtnContact from '../BtnContact/BtnContact';
+import s from './ContactForm.module.css';
+
 
 export default function ContactForm() {
    const {inputs, textarea} = contactForm;
@@ -49,7 +50,7 @@ export default function ContactForm() {
                     textAreaStyles={s.textarea}
                   />
                   <div className={s.form__btn}>
-                    <BtnGeneral title={'Send'}/>
+                    <BtnContact title={'Send'}/>
                   </div>
              </div>
     </form>

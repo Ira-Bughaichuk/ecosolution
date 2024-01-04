@@ -6,9 +6,9 @@ export const contactForm = {
             autoComplete: "name",
             placeholder: "John Rosie",
             aria: "Name",
-            error: "Wrong Fullname",
+            error: "Wrong Full name",
             required: true,
-            label: "Full name",
+            label: "* Full name",
             formData: "name"
         },
         {
@@ -20,7 +20,7 @@ export const contactForm = {
             error: "Wrong Email",
             required: true,
             pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-            label: "E-mail",
+            label: "* E-mail",
             formData: "email"
         },
         {
@@ -32,7 +32,7 @@ export const contactForm = {
             error: "Wrong Phone",
             required: true,
             pattern: /^\+380\d{9}$/,
-            label: "Phone",
+            label: "* Phone",
             formData: "phone"
         }
     ],
