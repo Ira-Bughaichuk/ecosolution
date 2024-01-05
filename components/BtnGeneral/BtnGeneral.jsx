@@ -5,7 +5,7 @@ import ArrowRight from "../../public/assets/icons/arrow-right.svg";
 export default function BtnGeneral({ title }) {
   return (
     <Link
-      to="/contactUs"
+      to="/cases"
       spy={true}
       smooth={true}
       offset={100}
@@ -14,14 +14,14 @@ export default function BtnGeneral({ title }) {
     rounded-full border border-solid border-primary"
     >
       {title}
+      <div className='flex items-center justify-center w-[32px] h-[32px] ml-3 bg-secondary rounded-full'>
       <Image
         src={ArrowRight}
         alt="arrow"
-        width={8}
-        height={8}
         priority={true}
-        className=" w-[32px] h-[32px] ml-3 bg-secondary rounded-full"
+        className="w-[16px] h-[16px]"
       />
+      </div>
     </Link>
   );
 }

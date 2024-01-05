@@ -23,5 +23,8 @@
 
 .navigation__link{
     @apply  text-lightGray font-normal text-2xl -tracking-[0.96px] cursor-pointer
-    hover:text-white ease-in duration-500
+     ease-in duration-500
+}
+.navigation__link.active{
+    @apply text-secondary
 }

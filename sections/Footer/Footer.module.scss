@@ -35,6 +35,6 @@
     @apply flex flex-col tablet:justify-end tablet:gap-y-6
 }
 .footer__btn{
-    @apply flex self-end w-[32px] h-[32px]  bg-secondary cursor-pointer bg-transparent hover:bg-primary transition ease-in duration-500 
-    rounded-full  border-none
+    @apply flex self-end w-[32px] h-[32px] justify-center items-center  bg-secondary cursor-pointer hover:bg-primary transition ease-in duration-500 
+    rounded-full  border-none -rotate-90
 }

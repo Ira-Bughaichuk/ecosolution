@@ -15,7 +15,7 @@
 }
 .btn{
     @apply flex justify-center items-center  w-[60px] h-[60px]  cursor-pointer bg-secondary hover:bg-primary transition ease-in duration-500 
-    rounded-full  border-none
+    rounded-full  border-none -rotate-45
 }
 
 

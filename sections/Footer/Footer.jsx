@@ -27,13 +27,12 @@ export default function Footer() {
             </a>
           </div>
           <div className={s.block__info__btn}>
-            <button className={`${s.footer__btn} group`} type='button' onClick={handleButtonClick}>
+            <button className={`${s.footer__btn} hoverBtn `} type='button' onClick={handleButtonClick}>
               <Image
                 src={ArrowRight}
                 alt="arrow"
-                width={16}
-                height={16}
-                className=" w-[32px] h-[32px]  bg-secondary  rounded-full hoverSvg"
+                className="w-[16px] h-[16px]"
+                priority={true}
               />
             </button>
             <p className="base-text hidden tablet:flex">
