@@ -1,8 +1,8 @@
 "use client";
+import { oswald } from '@/font/font';
+import { useState } from "react";
 import  CasesSwiper  from '@/components/CasesSwiper/CasesSwiper';
 import CasesSwiperNav from '@/components/CasesSwiperNav/CasesSwiperNav';
-
-import { useState } from "react";
 import s from './Cases.module.css';
 
 export default function Cases() {
@@ -16,7 +16,7 @@ export default function Cases() {
         <div className={s.blocks}>
           <div className={s.block__top}>
             <div className={s.block__title}>
-              <h2 className="title font-oswald">Successful cases of our company</h2>
+              <h2 className={`${oswald.className} title`}>Successful cases of our company</h2>
             </div>
             <div className={s.block__btns}>
             <CasesSwiperNav />

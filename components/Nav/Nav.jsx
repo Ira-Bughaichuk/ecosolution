@@ -5,16 +5,9 @@ import { navMenu } from "@/utils/Data/navLinks";
 import BtnNavClose from "../BtnNavClose/BtnNavClose";
 import Sociables from "../Sociables/Sociables";
 import  s  from "./Nav.module.css";
-
 import Image from "next/image";
 import ArrowMenu from "../../public/assets/icons/arrow-right-menu.svg";
-// import { usePathname } from "next/navigation";
-// import './globals.scss';
 
- // const pathname = usePathname();
-  // console.log(pathname)
-  // const isActive = pathname.startsWith(item.href);
-  // className={isActive ? text-secondary : text-gray}
 
 export default function Nav({open, handleClose }) {
   return (
@@ -24,7 +17,7 @@ export default function Nav({open, handleClose }) {
           <BtnNavClose handleClose={handleClose} />
           <ul className={s.navigation}>
             {navMenu.map((item) => (
-                <li key={item.label} className="font-firasans flex flex-row gap-x-2 items-center">
+                <li key={item.label} className="flex flex-row gap-x-2 items-center">
                     <Link to={item.href} 
                       spy={true}
                       smooth={true}

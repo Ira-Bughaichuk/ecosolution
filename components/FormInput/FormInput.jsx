@@ -7,7 +7,7 @@ export default function FormInput({ inputInfo, inputStyles, inputListStyles, err
       pattern: inputInfo.pattern,
   }
   return (
-    <div className={`${inputListStyles} font-firasans`}>
+    <div className={inputListStyles}>
       <label
         htmlFor={inputInfo.id}
         className='base-text block'
@@ -20,11 +20,11 @@ export default function FormInput({ inputInfo, inputStyles, inputListStyles, err
         autoComplete={inputInfo.autoComplete}
         placeholder={inputInfo.placeholder}
         aria-label={inputInfo.aria}
-        className={`${inputStyles} font-firasans  ${errors[inputInfo.formData]  ? 'border-errorColor'  : 'border-secondary'}`}
+        className={`${inputStyles}  ${errors[inputInfo.formData]  ? 'border-errorColor'  : 'border-secondary'}`}
         {...register(inputInfo.formData, options)}
       />
       {inputInfo.required && errors[inputInfo.formData] && (
-                <div className={`${errorStyle} font-firasans`}>
+                <div className={errorStyle}>
                     {inputInfo.error}
                 </div>
             )}

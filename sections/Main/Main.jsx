@@ -1,27 +1,28 @@
-import BtnGeneral from "@/components/BtnGeneral/BtnGeneral";
+import { oswald } from '@/font/font';
 import Image from "next/image";
-import s from './Main.module.css';
+import BtnGeneral from "@/components/BtnGeneral/BtnGeneral";
 import hero from '../../public/assets/images/hero.jpg';
+import s from './Main.module.css';
 
 export default function Main() {
   return (
     <div id="/main" className={s.section__main}>
         <div className="container-main"> 
             <div className={s.blockTop}>
-                <h1 className="font-oswald mane-title">RENEWABLE ENERGY For any task</h1>
+                <h1 className={` ${oswald.className} mane-title `}>RENEWABLE ENERGY For any task</h1>
                 <div className={s.block__description}>
                     <p className={s.block__text}>
-                        <span className="base-text font-firasans">Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass </span></p>
+                        <span className="base-text">Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass </span></p>
                     <BtnGeneral title={'Learn more'}/>
                 </div>
             </div>
             <address className={s.blockAddress}>
-            <p className="font-firasans base-text">
+            <p className="base-text">
                 <span>79005, Ukraine, Lviv</span>
                 <span>street. Shota Rustaveli, 7</span>
             </p>
-            <a className="font-firasans base-text" href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-            <p className="font-firasans base-text hidden tablet:flex">ecosolution &copy; 2023</p>
+            <a className="base-text" href="mailto:office@ecosolution.com">office@ecosolution.com</a>
+            <p className="base-text hidden tablet:flex">ecosolution &copy; 2023</p>
             </address>
             <Image 
                 src={hero} 

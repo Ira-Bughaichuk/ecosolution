@@ -1,23 +1,19 @@
 
-import { Inter, Oswald, Fira_Sans } from 'next/font/google';
+import { Oswald, Fira_Sans } from 'next/font/google';
 
 export const firaSans = Fira_Sans({
    subsets: ['latin'],
+   style: ["normal"],
    weight:['300', '400', '500'],
    display: 'swap',
-   variable: '--firasans-font'
+  //  variable: '--firasans-font'
 
 })
 export const oswald = Oswald({
   subsets: ['latin'],
   weight:['400', '500', '700'],
+  style: ["normal"],
   display: 'swap',
-  variable: '--oswald-font',
+  // variable: '--oswald-font',
 
-})
-export const inter = Inter({ 
-    subsets: ['latin'], 
-    weight: '400', 
-    display: 'swap',
-    variable: '--inter-font', 
 })

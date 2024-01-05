@@ -1,4 +1,4 @@
-import s from "./About.module.css";
+import { oswald } from '@/font/font';
 import Image from "next/image";
 
 import Global from '../../public/assets/icons/global-edit.svg';
@@ -8,6 +8,8 @@ import Ranking from '../../public/assets/icons/ranking.svg';
 import Cart from '../../components/Cart/Cart';
 import part1 from '../../public/assets/images/main-right.jpg';
 import part2 from '../../public/assets/images/main-left.jpg';
+import s from "./About.module.css";
+
 
 export default function About() {
   return (
@@ -16,7 +18,7 @@ export default function About() {
         <div className={s.blocks}>
         <div className={s.block__top}>
           <div className={s.block__title}>
-            <h2 className="title font-oswald">Main values of our company</h2>
+            <h2 className={`${oswald.className} title`}>Main values of our company</h2>
           </div>
             <p className={`${s.block__text}  base-text`}>EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world`s energy needs.</p>
         </div>

@@ -11,7 +11,7 @@ export default function BtnNavClose({handleClose}) {
         height={20}
         className="hoverSvg"
         />
-        <span className="font-firasans group-hover:text-secondary text-white text-base font-normal -tracking-{0.64px}">close</span>
+        <span className="group-hover:text-secondary text-white text-base font-normal -tracking-{0.64px}">close</span>
     </button>
   )
 }

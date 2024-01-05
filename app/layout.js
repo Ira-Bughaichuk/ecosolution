@@ -1,4 +1,4 @@
-import { firaSans, oswald, inter } from '@/font/font';
+import { firaSans } from '@/font/font';
 import './globals.scss';
 import { Toaster } from 'react-hot-toast';
 
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${firaSans.variable} ${oswald.variable} ${inter.variable}`}>
+      <body className={firaSans.className}>
       <Toaster
           position="top-center"
           reverseOrder={false}

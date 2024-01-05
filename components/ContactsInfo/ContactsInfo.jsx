@@ -11,14 +11,14 @@ export default function ContactsInfo() {
     <address className={s.address__container}>
         <ul className={s.address__list}>
             <li className={s.address__item}>
-                <span className="font-firasans base-text inline-block mb-2 desktop:mb-4">Phone:</span>
-                <div className="font-firasans contact-text mb-4">
+                <span className="base-text inline-block mb-2 desktop:mb-4">Phone:</span>
+                <div className="contact-text mb-4">
                     <a className={s.row__info} href="tell:+380981234567">
                         <Image src={Phone} alt="Phone" width={24} height={24} className="hoverSvg"/>
                         38 (098) 12 34 567
                     </a>
                 </div>
-                <div className="font-firasans contact-text">
+                <div className="contact-text">
                     <a className={s.row__info}  href="tell:+380931234567">
                         <Image src={Phone} alt="Phone" width={24} height={24} className="hoverSvg"/>
                         38 (093) 12 34 567
@@ -26,8 +26,8 @@ export default function ContactsInfo() {
                 </div>
             </li>
             <li>
-                <span className="font-firasans base-text inline-block mb-2 desktop:mb-4">E-mail:</span>
-                <div className="font-firasans contact-text">
+                <span className="base-text inline-block mb-2 desktop:mb-4">E-mail:</span>
+                <div className="contact-text">
                     <a className={s.row__info} href="mailto:office@ecosolution.com">
                         <Image src={Email} alt="Email" width={24} height={24} className="hoverSvg"/>
                         office@ecosolution.com
@@ -35,8 +35,8 @@ export default function ContactsInfo() {
                 </div>
             </li>
             <li>
-            <span className="font-firasans base-text inline-block mb-2 desktop:mb-4">Address:</span>
-                <div className="font-firasans contact-text">
+            <span className="base-text inline-block mb-2 desktop:mb-4">Address:</span>
+                <div className="contact-text">
                     <a className={s.row__info} href="https://maps.app.goo.gl/pmoGC5Yf7tZ35uCb8" target="_blank" rel="noopener noreferrer">
                         <Image src={Map} alt="Map" width={24} height={24} className="hoverSvg"/>
                         <span className='inline-block w-[244px] desktop:w-[464px]'>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
@@ -44,7 +44,7 @@ export default function ContactsInfo() {
                 </div>
             </li>
             <li>
-            <span className="font-firasans base-text inline-block mb-5 desktop:mb-4">Social Networks:</span>
+            <span className="base-text inline-block mb-5 desktop:mb-4">Social Networks:</span>
                 {/* <div className={s.row__socials}>
                     <a href="https://www.facebook.com/">
                         <Image src={Facebook} alt="Facebook" width={24} height={24} className="hoverSvg"/>

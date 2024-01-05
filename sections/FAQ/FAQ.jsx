@@ -1,4 +1,5 @@
 'use client';
+import { oswald } from '@/font/font';
 import { useState } from 'react';
 import BtnHeader from "@/components/BtnHeader/BtnHeader";
 import { detailsList } from "@/utils/Data/detailsList";
@@ -16,7 +17,7 @@ export default function FAQ() {
       <div className="container-main">
         <div className={s.blocks}>
           <div className={s.block__title}>
-            <h2 className="title font-oswald">Frequently Asked Questions</h2>
+            <h2 className={`${oswald.className} title text-left`}>Frequently Asked Questions</h2>
           </div>
           <div className={s.block__left}>
             <div className={s.block__left__list}>
@@ -26,8 +27,8 @@ export default function FAQ() {
                   e.preventDefault();
                   handleToggle(index);
                 }}>
-                  <summary className={s.block__left__summary}><span className="font-firasans subBase-text">{item.summery}</span></summary>
-                  <p className="font-firasans text-justify text-sm font-normal -leading-[0.56px] desktop:text-base desktop:-leading-[0.64px]">{item.text}</p>
+                  <summary className={s.block__left__summary}><span className="subBase-text">{item.summery}</span></summary>
+                  <p className="text-justify text-sm font-normal -leading-[0.56px] desktop:text-base desktop:-leading-[0.64px]">{item.text}</p>
                 </details>
               ))}
               </div>
@@ -35,10 +36,10 @@ export default function FAQ() {
 
           <div className={s.block__right}>
             <div className={s.block__right__title}>
-              <h2 className="title font-oswald">Frequently Asked Questions</h2>
+              <h2 className="title">Frequently Asked Questions</h2>
             </div>
             <div className={s.block__right__contact}>
-              <span className="font-firasans subBase-text">Didn`t find the answer to your question? </span>
+              <span className="subBase-text">Didn`t find the answer to your question? </span>
               <div className={s.block__right__btn}>
               <BtnHeader title={"Contact Us"} />
               </div>

@@ -10,7 +10,7 @@ export default function BtnHeader({title}) {
     <button
       type="button"
       onClick={handleButtonClick}
-      className="flex cursor-pointer  font-oswald text-base font-normal  rounded-full bg-secondary items-center py-[10px] px-4 hover:text-secondary hover:bg-primary transition ease-in duration-500 group"
+      className="flex cursor-pointer text-base font-normal  rounded-full bg-secondary items-center py-[10px] px-4 hover:text-secondary hover:bg-primary transition ease-in duration-500 group"
     > {title}
       <Image
         src={ArrowRight}
