@@ -1,0 +1,13 @@
+.close_btn {
+    display: flex;
+    column-gap: 4px;
+    padding-left: 0px;
+    align-items: center;
+    font-size: 20px;
+    color: var(--bgColor);
+    background-color: transparent;
+    transition: color 250ms ease-in-out;
+    &:hover {
+      color: var(--secondaryText);
+    }
+  }

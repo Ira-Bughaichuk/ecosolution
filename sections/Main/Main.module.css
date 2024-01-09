@@ -1,6 +1,6 @@
 .section__main{
    @apply pb-9 tablet:pb-[100px] desktop:pb-[120px]
-   pt-[146px] tablet:pt-[164px] desktop:pt-[200px]
+   pt-[106px] tablet:pt-[114px] desktop:pt-[150px]
 }
 .blockTop{
     @apply  flex flex-col gap-y-6 tablet:flex-row tablet:justify-between

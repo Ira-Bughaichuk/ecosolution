@@ -18,6 +18,13 @@
   border: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}
 button{
   border: none;
   outline: none;

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BtnHeader from "@/components/BtnHeader/BtnHeader";
 import BtnNavOpen from "@/components/BtnNavOpen/BtnNavOpen";
 import Logo from "@/components/Logo/Logo";
@@ -8,7 +8,19 @@ import Nav from "@/components/Nav/Nav";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 36);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  // style={{ backgroundColor: isScrolled ? "#ffffff" : "#F3F5FA" }}
   const handleClose = () => {
     setOpen(false);
   };
@@ -16,9 +28,8 @@ export default function Header() {
     setOpen(true);
   };
   return (
-    <header className={s.header}>
+    <header className={s.header} style={{ backgroundColor: isScrolled ? "#ffffff" : "#F3F5FA" }}>
       <div className="container-main">
-        <Nav open={open} handleClose={handleClose} />
         <div className={s.block}>
           <Logo />
           <div className={s.block__right}>
@@ -28,6 +39,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+        <Nav open={open} handleClose={handleClose} />
       </div>
     </header>
   );

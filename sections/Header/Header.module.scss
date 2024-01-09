@@ -16,7 +16,8 @@
 //     min-height: 70px;  
 // }
 .header{
-    @apply fixed top-0 left-0 w-full z-10 pt-9 desktop:pt-6
+    @apply sticky z-40 top-0 left-0 w-full  pt-9 desktop:pt-6 h-[110px]
+    
 }
 .block{
     @apply w-full flex justify-between items-center
