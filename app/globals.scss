@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #173D33;
-  --accent-color: #97D28B;
-  --background-color: #F3F5FA;
-  --error-color:#D28B8B;
-}
-
-*{
   --text: #173D33;
   --secondaryText: #97D28B;
   --bgColor: #F3F5FA;
+}
+
+*{
   margin: 0;
   padding: 0;
   border: 0;
@@ -133,17 +129,8 @@ body {
   transition: stroke;
 }
 .hoverAccent:hover img {
-  stroke:var(--accent-color);
+  stroke:var(--secondaryText);
 }
-
-
-// .hoverClass {
-//   transition: filter 0.3s ease;
-// }
-// .hoverClass:hover {
-//   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
-// }
-
 .mane-title{
   @apply w-full tablet:w-[301px] desktop:w-[485px] text-primary text-4xl leading-9 font-normal uppercase tablet:text-5xl tablet:leading-[48px] desktop:text-[64px] desktop:leading-[64px]
 }
@@ -162,42 +149,3 @@ body {
 .contact-text{
   @apply text-primary text-xl font-normal -tracking-[0.8] desktop:text-2xl desktop:-tracking-[0.96]
 }
-/* .title{
-  font-family: var(--oswald-font);
-} */
-// .successBorder {
-//   border-color: var(--accent-color);
-// }
-// .errorBorder {
-//   border-color: var(--error-color);
-// }
-// .hoverClass {
-//   transition: filter 0.3s ease;
-// }
-// .hoverClass:hover {
-//   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
-// }
-// .hoverButton {
-//   cursor: pointer;
-//   transition: filter 0.3s ease;
-// }
-// .hoverButton:hover img{
-//   filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(4773%) hue-rotate(104deg) brightness(101%) contrast(99%);
-// }
-// .menuArrow {
-//   fill: transparent;
-//   stroke: #FFFFFF40;
-// }
-// .menuArrow:hover{
-//   color:#fff
-// }
-// .menuArrow:hover svg{
-//   stroke: #fff;
-// }
-// .hoverAccent {
-//   transition: stroke;
-// }
-// .hoverAccent:hover svg {
-//   stroke:var(--accent-color);
-// }
-
