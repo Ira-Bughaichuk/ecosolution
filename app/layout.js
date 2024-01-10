@@ -2,34 +2,39 @@ import { firaSans } from '@/font/font';
 import './globals.scss';
 import { Toaster } from 'react-hot-toast';
 
-
 export const metadata = {
-  title: "EcoSolution",
-  description: "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
-  icons: [
-    {
-      url: "/icons/favicon.svg",
-      media: "(prefers-color-scheme: dark)",
-      rel: "icon",
-      type: "image/svg",
-    },
-    {
-      url: "/icons/favicon.svg",
-      media: "(prefers-color-scheme: light)",
-      rel: "icon",
-      type: "image/svg",
-    },
-  ],
-  openGraph: {
     title: "EcoSolution",
-    description:
-      "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
-    type: "website",
-    siteName: "EcoSolution",
-    images: [{ url: "/ogp/main.png" }, { url: "/ogp/main.jpg" }],
-    url: "https://ecosolution-ebon.vercel.app",
-  },
-};
+    description: "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
+}
+
+// export const metadata = {
+//    metadataBase: new URL('https://ecosolution-ebon.vercel.app'),
+//   title: "EcoSolution",
+//   description: "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
+//   icons: [
+//     {
+//       url: "/icons/favicon.svg",
+//       media: "(prefers-color-scheme: dark)",
+//       rel: "icon",
+//       type: "image/svg",
+//     },
+//     {
+//       url: "/icons/favicon.svg",
+//       media: "(prefers-color-scheme: light)",
+//       rel: "icon",
+//       type: "image/svg",
+//     },
+//   ],
+//   openGraph: {
+//     title: "EcoSolution",
+//     description:
+//       "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
+//     type: "website",
+//     siteName: "EcoSolution",
+//     images: [{ url: "/ogp/main.png" }, { url: "/ogp/main.jpg" }],
+//     url: "https://ecosolution-ebon.vercel.app",
+//   },
+// };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

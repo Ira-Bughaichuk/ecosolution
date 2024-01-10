@@ -11,48 +11,46 @@ import s from "./Nav.module.css";
 export default function Nav({ open, handleClose }) {
   const [anchor, setAnchor] = useState("");
 
-useEffect(() => {
-  const body = document.body;
-  if (open) {
-    body.classList.add("lock");
-  } else {
-    body.classList.remove("lock");
-  }
-  return () => {
-    body.classList.remove("lock");
+  useEffect(() => {
+    const body = document.body;
+    if (open) {
+      body.classList.add("lock");
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", addKeyDown);
+    } else {
+      body.classList.remove("lock");
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", addKeyDown);
+    }
+
+    return () => {
+      body.classList.remove("lock");
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", addKeyDown);
+    };
+  }, [open]);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    setAnchor(hash.substring(1, hash.length));
+  }, []);
+
+  const handleLinkClick = (label) => {
+    setAnchor(label);
+    handleClose();
   };
-}, [open]);
 
-useEffect(() => {
-  const hash = window.location.hash;
-  setAnchor(hash.substring(1, hash.length));
-}, []);
-
-const handleLinkClick = (label) => {
-  setAnchor(label);
-  handleClose();
-};
-useEffect(() => {
-  document.body.style.overflow = "hidden";
-  window.addEventListener("keydown", addKeyDown);
-  return () => {
-    document.body.style.overflow = "";
-    window.removeEventListener("keydown", addKeyDown);
+  const addKeyDown = (e) => {
+    if (e.code === "Escape") {
+      onClose(false);
+    }
   };
-});
 
-const addKeyDown = (e) => {
-  if (e.code === "Escape") {
-    onClose(false);
-  }
-};
-
-const addOverlay = (e) => {
-  if (e.currentTarget === e.target) {
-    onClose(false);
-  }
-};
- 
+  const addOverlay = (e) => {
+    if (e.currentTarget === e.target) {
+      onClose(false);
+    }
+  };
  
   return (
     <div className={open ? `${s.overlay}` : `visually-hidden ${s.overlay}`}  onClick={addOverlay}> 
