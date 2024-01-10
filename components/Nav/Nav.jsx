@@ -10,6 +10,7 @@ import s from "./Nav.module.css";
 
 export default function Nav({ open, handleClose }) {
   const [anchor, setAnchor] = useState("");
+
 useEffect(() => {
   const body = document.body;
   if (open) {
@@ -31,10 +32,30 @@ const handleLinkClick = (label) => {
   setAnchor(label);
   handleClose();
 };
+useEffect(() => {
+  document.body.style.overflow = "hidden";
+  window.addEventListener("keydown", addKeyDown);
+  return () => {
+    document.body.style.overflow = "";
+    window.removeEventListener("keydown", addKeyDown);
+  };
+});
+
+const addKeyDown = (e) => {
+  if (e.code === "Escape") {
+    onClose(false);
+  }
+};
+
+const addOverlay = (e) => {
+  if (e.currentTarget === e.target) {
+    onClose(false);
+  }
+};
  
  
   return (
-    <div className={open ? `${s.overlay}` : `visually-hidden ${s.overlay}`}> 
+    <div className={open ? `${s.overlay}` : `visually-hidden ${s.overlay}`}  onClick={addOverlay}> 
     <aside
       className={
         open ? `${s.sectionSidebar}${s.active}` : `${s.sectionSidebar}`

@@ -5,20 +5,19 @@ import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
   title: "EcoSolution",
-  description:
-    "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
+  description: "The site offers insights into innovative environmental technologies and solutions for environmental preservation.",
   icons: [
     {
+      url: "/icons/favicon.svg",
+      media: "(prefers-color-scheme: dark)",
       rel: "icon",
       type: "image/svg",
-      media: "(prefers-color-scheme: dark)",
-      url: "/icons/favicon.svg",
     },
     {
+      url: "/icons/favicon.svg",
+      media: "(prefers-color-scheme: light)",
       rel: "icon",
       type: "image/svg",
-      media: "(prefers-color-scheme: light)",
-      url: "/icons/favicon.svg",
     },
   ],
   openGraph: {
