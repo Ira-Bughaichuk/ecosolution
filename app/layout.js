@@ -12,13 +12,13 @@ export const metadata = {
       rel: "icon",
       type: "image/svg",
       media: "(prefers-color-scheme: dark)",
-      url: "/public/assets/icons/favicon.svg",
+      url: "../public/assets/icons/favicon.svg",
     },
     {
       rel: "icon",
       type: "image/svg",
       media: "(prefers-color-scheme: light)",
-      url: "/public/assets/icons/favicon.svg",
+      url: "../public/assets/icons/favicon.svg",
     },
   ],
   openGraph: {
