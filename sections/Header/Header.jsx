@@ -20,7 +20,7 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // style={{ backgroundColor: isScrolled ? "#ffffff" : "#F3F5FA" }}
+
   const handleClose = () => {
     setOpen(false);
   };
