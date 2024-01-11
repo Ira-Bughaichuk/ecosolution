@@ -1,6 +1,7 @@
 import Image from "next/image";
 import s from "./CasesSlider.module.css";
 import ArrowRight from '../../public/assets/icons/arrow-right.svg';
+import { lazy } from "react";
 
 
 

@@ -1,0 +1,10 @@
+.navigation{
+    @apply  flex flex-col gap-y-2 
+}
+.navigation__link{
+    @apply  text-lightGray font-normal text-2xl -tracking-[0.96px] 
+    cursor-pointer ease-in duration-500 flex flex-row gap-1 items-center hover:text-white
+}
+.active{
+    @apply text-secondary
+}

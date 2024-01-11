@@ -46,7 +46,7 @@ export default function Footer() {
             <div className={s.row__logo}>
               <Logo />
               <div className={s.block__info__btn}>
-                <button className={`${s.footer__btn} group`}>
+                <button type='button' className={`${s.footer__btn} group`}>
                   <Image
                     src={ArrowRight}
                     alt="arrow"
