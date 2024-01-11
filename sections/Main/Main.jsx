@@ -29,10 +29,7 @@ export default function Main() {
                 alt="Hero"  
                 width={1240}
                 height={524}
-                loading="lazy"
                 sizes="(max-width: 767px) 708px, (max-width: 1279px) 1240px"
-                // sizes="100vw"
-                // className="w-[319px] h-[200px] tablet:w-[708px] tablet:h-[348px] desktop:w-[1240px] desktop:h-[524px] object-cover" 
                 />
         </div>
     </div>
