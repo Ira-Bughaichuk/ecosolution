@@ -4,7 +4,7 @@ export default function BtnNavClose({ handleClose }) {
   return (
     <button
       type="button"
-      aria-label="close menu"
+      aria-label="Close menu"
       onClick={handleClose}
       className={s.close_btn}
     >

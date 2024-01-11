@@ -7,7 +7,7 @@ export default function Sociables() {
   return (
     <ul className="flex flex-row gap-x-2">
       <li>
-        <Link href="">
+        <Link href="https://uk-ua.facebook.com/" aria-label="Facebook" target='_blank' rel="noopener noreferrer nofollow">
           <Image
             src={Facebook}
             alt="Facebook"
@@ -18,7 +18,7 @@ export default function Sociables() {
         </Link>
       </li>
       <li>
-        <Link href="">
+        <Link href="https://www.instagram.com/" aria-label="Instagram" target='_blank' rel="noopener noreferrer nofollow">
           <Image
             src={Instagram}
             alt="Instagram "

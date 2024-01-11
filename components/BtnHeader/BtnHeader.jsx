@@ -10,6 +10,7 @@ export default function BtnHeader({title}) {
     <button
       type="button"
       onClick={handleButtonClick}
+      aria-label="Scroll to contacts"
       className="flex cursor-pointer text-base font-normal  rounded-full bg-secondary items-center py-[10px] px-4 hover:text-secondary hover:bg-primary transition ease-in duration-500 group"
     > {title}
       <Image
