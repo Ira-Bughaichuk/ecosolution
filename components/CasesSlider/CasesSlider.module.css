@@ -12,6 +12,7 @@
 .row__top__title{
     @apply text-primary text-lg font-normal -tracking-[0.72px] tablet:text-xl  tablet:-tracking-[0.8px] desktop:text-2xl desktop:-tracking-[0.96px]
             w-[175px] tablet:w-[194px] desktop:w-[357px]
+            h-[66px] tablet:h-[72px] desktop:h-[58px]
 }
 .btn{
     @apply flex justify-center items-center  w-[60px] h-[60px]  cursor-pointer bg-secondary hover:bg-primary transition ease-in duration-500 

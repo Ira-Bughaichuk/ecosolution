@@ -17,3 +17,7 @@
  @apply mt-[49px] tablet:mt-[43px] desktop:mt-[41px] flex flex-col tablet:flex-row gap-x-2 tablet:justify-between items-center
         mb-[36px] tablet:mb-[40px] desktop:mb-[36px]
 }
+
+.textCopy{
+    @apply hidden tablet:block
+}

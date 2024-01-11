@@ -32,7 +32,7 @@ export const metadata = {
 //     type: "website",
 //     siteName: "EcoSolution",
 //     images: [{ url: "/ogp/main.png" }, { url: "/ogp/main.jpg" }],
-//     url: "https://ecosolution-ebon.vercel.app",
+//     url: "https://ecosolution-liard.vercel.app,
 //   },
 // };
 export default function RootLayout({ children }) {

@@ -16,14 +16,14 @@ export default function Main() {
                     <BtnGeneral title={'Learn more'}/>
                 </div>
             </div>
-            <address className={s.blockAddress}>
-            <p className="base-text">
+            <ul className={s.blockAddress}>
+            <li className="base-text">
                 <span>79005, Ukraine, Lviv</span>
                 <span>street. Shota Rustaveli, 7</span>
-            </p>
-            <a className="base-text" href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-            <p className="base-text hidden tablet:flex">ecosolution &copy; 2023</p>
-            </address>
+            </li>
+            <li><a className="base-text" href="mailto:office@ecosolution.com">office@ecosolution.com</a></li>
+            <li className={`base-text  ${s.textCopy}`}>ecosolution &copy; 2023</li>
+            </ul>
             <Image 
                 src={hero} 
                 alt="Hero"  
