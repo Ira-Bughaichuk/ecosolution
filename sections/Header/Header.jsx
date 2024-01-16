@@ -27,9 +27,7 @@ export default function Header() {
   const handleOpen = () => {
     setOpen(true);
   };
-  // const handleToggleNav =()=>{
-  //   setOpen(!open);
-  // }
+
   return (
     <header className={s.header} style={{ backgroundColor: isScrolled ? "#ffffff" : "#F3F5FA" }}>
       <div className="container-main">
