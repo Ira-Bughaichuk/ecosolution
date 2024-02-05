@@ -7,25 +7,25 @@ import s from "./Nav.module.css";
 
 export default function Nav({ open, handleClose }) {
   useEffect(() => {
-    const body = document.body;
-    const html = document.documentElement;
+    // const body = document.body;
+    // const html = document.documentElement;
 
     if (open) {
-      body.classList.add('lock');
-      html.classList.add('lock');
-      document.body.style.overflow = 'hidden';
+      // body.classList.add('lock');
+      // html.classList.add('lock');
+      // document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', addKeyDown);
     } else {
-      body.classList.remove('lock');
-      html.classList.remove('lock');
-      document.body.style.overflow = '';
+      // body.classList.remove('lock');
+      // html.classList.remove('lock');
+      // document.body.style.overflow = '';
       window.removeEventListener('keydown', addKeyDown);
     }
 
     return () => {
-      body.classList.remove('lock');
-      html.classList.remove('lock');
-      document.body.style.overflow = '';
+      // body.classList.remove('lock');
+      // html.classList.remove('lock');
+      // document.body.style.overflow = '';
       window.removeEventListener('keydown', addKeyDown);
     };
   }, [open]);
@@ -35,8 +35,9 @@ export default function Nav({ open, handleClose }) {
       handleClose();
     }
   };
+
   return (
-    <div className={open ? `${s.overlay}` : `visually-hidden ${s.overlay}`}> 
+    <div className={open ?  `${s.overlay}` : `hidden`}> 
       <aside
         className={
           open ? `${s.sectionSidebar}${s.active}` : `${s.sectionSidebar}`
@@ -50,6 +51,6 @@ export default function Nav({ open, handleClose }) {
           <Sociables />
         </div>
       </aside>
-    </div>
+     </div>
   );
 }
